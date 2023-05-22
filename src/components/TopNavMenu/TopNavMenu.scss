@@ -2,11 +2,9 @@
 @import '../../scss/abstracts/_mixins.scss';
 
 .top-nav-menu{
-    @include breakpoint(desktop) {
+    @include breakpoint(laptop) {
         position: absolute;
-        top: 190px;
         width: 100vw;
-        background-color: aqua;
         height: 40px;
         padding: 8px;
         left: 0;
@@ -18,6 +16,8 @@
             width: 100%;
             margin-left: auto;
             margin-right: auto;
+            justify-content: space-around;
+            list-style: none;
         }
     }
 }

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Header.scss';
-import Icons from '../Icons/Icons';
 import TopNavBar from '../TopNavBar/TopNavBar';
 import SearchBar from '../SeachBar/SearchBar';
 import Disclaimer from '../Disclaimer/Disclaimer';
@@ -26,7 +25,7 @@ const Header = () => {
       <Disclaimer />
       <header>
         <TopNavBar />
-        <SearchBar />
+        {!isDesktop && <SearchBar />}
       </header>
       {isDesktop && <TopNavMenu />}
     </div>
