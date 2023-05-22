@@ -1,0 +1,23 @@
+@import '../../scss/abstracts/_colors.scss';
+@import '../../scss/abstracts/_mixins.scss';
+
+.top-nav-menu{
+    @include breakpoint(desktop) {
+        position: absolute;
+        top: 190px;
+        width: 100vw;
+        background-color: aqua;
+        height: 40px;
+        padding: 8px;
+        left: 0;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            max-width: 1440px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 47.9375rem) { @content };    //767px
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 47.9375rem) { @content };     //767px
+    }
+    @if $breakpoint == laptop {
+        @media only screen and (min-width: 63.9375rem) { @content };    //1023px
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 90rem) { @content };    //1440
+    }
+    @if $breakpoint == mobileLegacy {
+        @media only screen and (max-width: 74.9375rem) { @content };    //1199
+    }
+  }
