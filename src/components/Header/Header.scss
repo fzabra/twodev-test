@@ -1,0 +1,98 @@
+@import '../../scss/abstracts/_colors.scss';
+@import '../../scss/abstracts/_mixins.scss';
+
+.container-site{
+    background-color: $header-color;
+    header{
+        max-width: 1440px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include breakpoint(desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include breakpoint(desktop) {
+            .content-header{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: end;
+            }
+        }
+
+        img.svg{
+            width: 30px;
+            position: absolute;
+            top: 37px;
+            &.cart{
+                right: 55px;
+                @include breakpoint(desktop) {
+                    position: initial;
+                }
+            }
+            &.truck{
+                right: 95px;
+            }
+
+            &.search{
+                position: sticky;
+                left: 100%;
+                z-index: 9;
+                margin-top: 3px;
+                margin-right: 6px;
+            }
+
+            @include breakpoint(desktop) {
+                position: initial;
+            }
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                padding: 15px;
+                border-bottom: 1px solid #373d49;
+                img.svg{
+                    position: initial;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+        div{
+            &:nth-child(1){
+            }
+            input{
+                width: 69%;
+                height: 38px;
+                border: 1px solid #bbd422;
+                position: absolute;
+                right: 0;
+                padding: 10px;
+            }
+            .dropdown{
+                button{
+                    position: absolute;
+                    top: 1px;
+                    border-radius: 0;
+                    width: 31%;
+                }
+            }
+
+            button{
+                position: absolute;
+                top: 1px;
+                color:#bbd422;
+                background-color: $white;
+                border: 1px solid #bbd422;
+                border-top: none;
+                border-right: none;
+            }
+        }
+        
+    }
+}
