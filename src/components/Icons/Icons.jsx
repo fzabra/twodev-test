@@ -24,7 +24,7 @@ const Icons = ({ name, ...props }) => {
       <img src="./images/icons/close-white.svg" alt="Close Icon" width="22px" {...props} />
     ),
     search: (
-      <img src="./images/icons/search.svg" alt="Close Icon" width="22px" {...props} />
+      <img src="./images/icons/search.svg" alt="Search Icon" width="22px" {...props} />
     ),
 
     
