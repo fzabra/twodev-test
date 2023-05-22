@@ -1,0 +1,23 @@
+@import '../../scss/abstracts/_colors.scss';
+@import '../../scss/abstracts/_mixins.scss';
+
+.top-nav-menu{
+    @include breakpoint(laptop) {
+        position: absolute;
+        width: 100vw;
+        height: 40px;
+        padding: 8px;
+        left: 0;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            max-width: 1440px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-around;
+            list-style: none;
+        }
+    }
+}
