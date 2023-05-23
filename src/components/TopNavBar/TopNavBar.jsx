@@ -35,6 +35,7 @@ const TopNavBar = () => {
     transition: 'left 0.3s ease-in-out, transform 0.3s ease-in-out',
     zIndex: '10',
     top: '98px',
+    display: expanded ? 'block' : 'none',
   };
 
   return (

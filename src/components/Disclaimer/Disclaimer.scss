@@ -1,5 +1,9 @@
+@import '../../scss/abstracts/_colors.scss';
+@import '../../scss/abstracts/_mixins.scss';
+
 .disclaimer{
-    background: #bbd422;
-    padding: 15px;
+    background: $green01;
+    padding: 0.938rem;
     text-align: center;
+    font-weight: 900;
 }
