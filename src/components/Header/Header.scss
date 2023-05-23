@@ -1,7 +1,6 @@
-@import '../../scss/abstracts/_colors.scss';
 @import '../../scss/abstracts/_mixins.scss';
 
-.container-site{
+.container-header{
     background-color: $header-color;
     header{
         max-width: 90rem;
