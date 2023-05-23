@@ -4,7 +4,7 @@
 .container-site{
     background-color: $header-color;
     header{
-        max-width: 1440px;
+        max-width: 90rem;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -24,25 +24,25 @@
         }
 
         img.svg{
-            width: 30px;
+            width: 1.875rem;
             position: absolute;
-            top: 37px;
+            top: 2.313rem;
             &.cart{
-                right: 55px;
+                right: 3.438rem;
                 @include breakpoint(desktop) {
                     position: initial;
                 }
             }
             &.truck{
-                right: 95px;
+                right: 5.938rem;
             }
 
             &.search{
                 position: sticky;
                 left: 100%;
                 z-index: 9;
-                margin-top: 3px;
-                margin-right: 6px;
+                margin-top: 0.188rem;
+                margin-right: 0.375rem;
             }
 
             @include breakpoint(desktop) {
@@ -55,8 +55,8 @@
             padding: 0;
             margin-bottom: 0;
             li{
-                padding: 15px;
-                border-bottom: 1px solid #373d49;
+                padding: 0.938rem;
+                border-bottom: 0.063rem solid $grey01;
                 img.svg{
                     position: initial;
                     margin-right: 0.625rem;
@@ -67,8 +67,8 @@
         div{
             input{
                 width: 69%;
-                height: 38px;
-                border: 1px solid #bbd422;
+                height: 2.375rem;
+                border: 0.063rem solid $green01;
                 position: absolute;
                 right: 0;
                 padding: 0.625rem;
@@ -94,9 +94,9 @@
             button{
                 position: absolute;
                 top: 0;
-                color:#bbd422;
+                color:$green01;
                 background-color: $white;
-                border: 1px solid #bbd422;
+                border: 0.063rem solid $green01;
                 border-right: none;
             }
         }

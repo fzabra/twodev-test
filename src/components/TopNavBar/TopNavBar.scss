@@ -3,7 +3,7 @@
 
 #root{
     .navbar{
-        padding: 8px;
+        padding: 0.5rem;
     }
     .navbar-toggler{
         color: $white;
@@ -38,7 +38,7 @@
         header > nav > div:nth-child(2){
             position: absolute;
             width: 35%;
-            margin-left: 200px;
+            margin-left: 12.5rem;
         }
     }
     
