@@ -6,6 +6,13 @@
     text-align: center;
     font-weight: 400;
 
+    a{
+        color: #373d49;
+        &:hover{
+            color: #4c5800;
+        }
+    }
+
     p{
         margin-bottom: 0;
     }
