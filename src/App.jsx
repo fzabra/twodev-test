@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import CarouselSlider from './components/CarouselSlider/CarouselSlider'
+import CarouselSlider from './components/CarouselSlider/CarouselSlider';
+import ContentHome from './components/ContentHome/ContentHome';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <>
       <Header />
       <CarouselSlider />
+      <ContentHome />
     </>
   )
 }

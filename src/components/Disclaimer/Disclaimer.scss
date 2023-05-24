@@ -1,9 +1,45 @@
-@import '../../scss/abstracts/_colors.scss';
 @import '../../scss/abstracts/_mixins.scss';
 
 .disclaimer{
     background: $green01;
     padding: 0.938rem;
     text-align: center;
-    font-weight: 900;
+    font-weight: 400;
+
+    a{
+        color: #373d49;
+        &:hover{
+            color: #4c5800;
+        }
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .fade-in {
+        animation: fade-in 1s forwards;
+    }
+    
+    .fade-out {
+        animation: fade-out 1s forwards;
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }    
 }
