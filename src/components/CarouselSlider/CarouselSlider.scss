@@ -1,4 +1,13 @@
+@import '../../scss/abstracts/_mixins.scss';
 .carousel {
     position: relative;
     margin-top: 0.25rem;
+    .carousel-indicators{
+        button{
+            background-color: $green01!important;
+            border-radius: 60%;
+            height: 35px;
+            width: 35px;
+        }
+    }
 }
