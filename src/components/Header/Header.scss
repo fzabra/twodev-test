@@ -40,8 +40,9 @@
                 position: sticky;
                 left: 100%;
                 z-index: 9;
-                margin-top: 0.188rem;
+                margin-top: 10px;
                 margin-right: 0.375rem;
+                width: 20px;
             }
 
             @include breakpoint(desktop) {
