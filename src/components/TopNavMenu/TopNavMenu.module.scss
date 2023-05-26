@@ -1,7 +1,7 @@
 @import '../../scss/abstracts/_colors.scss';
 @import '../../scss/abstracts/_mixins.scss';
 
-.top-nav-menu{
+.topNavMenu{
     @include breakpoint(laptop) {
         position: absolute;
         width: 100%;

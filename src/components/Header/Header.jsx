@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Header.scss';
+import styles from './Header.module.scss'
 import TopNavBar from '../TopNavBar/TopNavBar';
 import SearchBar from '../SeachBar/SearchBar';
 import Disclaimer from '../Disclaimer/Disclaimer';
@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="container-header">
+    <div className={styles.containerHeader}>
       <Disclaimer />
       <header>
         <TopNavBar />

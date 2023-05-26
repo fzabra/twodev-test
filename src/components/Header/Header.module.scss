@@ -1,12 +1,55 @@
 @import '../../scss/abstracts/_mixins.scss';
 
-.container-header{
+
+
+.containerHeader{
     background-color: $header-color;
+    
     header{
         max-width: 90rem;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+
+        nav{
+            @include breakpoint(laptop) {
+                width: 100%;
+                justify-content: space-between;
+                padding: 0 20px;
+            }
+            button{
+                &:focus,
+                &:active{
+                    outline: none;
+                    box-shadow:none
+                } 
+            }
+
+            div[class^=blockElementsHeader] {
+                height: 90px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                div[class^=blockIcons] {
+                    width: 100%;
+                    display: flex;
+                    gap: 15px;
+                    position: relative;
+                }
+                button{
+                    background-color: transparent;
+                    border: none;
+                    position: relative;
+                    width: 50px;
+                }
+            }
+            a{
+                img{
+                    margin-left: 10px;
+                }
+                
+            }
+        }
 
         @include breakpoint(desktop) {
             display: flex;
@@ -14,7 +57,7 @@
             justify-content: space-between;
         }
         @include breakpoint(desktop) {
-            .content-header{
+            .contentHeader{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
@@ -65,19 +108,26 @@
         }
         
         div{
+            
             input{
-                width: 69%;
-                height: 2.375rem;
-                border: 0.063rem solid $green01;
+                width: 70%;
+                height: 39px;
+                border: 0.063rem solid #bbd422;
                 position: absolute;
                 right: 0;
                 padding: 0.625rem;
+                margin-top: 0;
+                border-left: 0;
+                top: 0;
                 @include breakpoint(laptop) {
                     border-top-right-radius: 0.625rem;
                     border-bottom-right-radius: 0.625rem;
+                    width: 81%;
                 }                
             }
             .dropdown{
+                position: absolute;
+                z-index: 21;
                 button{
                     position: absolute;
                     top: 0;
@@ -93,11 +143,19 @@
 
             button{
                 position: absolute;
-                top: 0;
-                color:$green01;
-                background-color: $white;
-                border: 0.063rem solid $green01;
+                color: #bbd422;
+                background-color: #fff;
+                border: 0.063rem solid #bbd422;
                 border-right: none;
+                border-radius: 0;
+                width: 30vw;
+                height: 39px;
+                top: 0;
+
+                @include breakpoint(laptop) {
+                    border-radius: 8px;
+                    width: 20%;
+                }
             }
         }
         

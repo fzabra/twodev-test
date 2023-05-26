@@ -3,18 +3,15 @@
 #root{
     .navbar{
         padding: 0.5rem;
-    }
-    .navbar-toggler{
-        color: $white;
-        border: none;
-        &:focus{
-            box-shadow: none;
-            border: none;
+        a{
+            padding-left: 50px;
+            img{
+                margin-left: 1rem;
+            }
         }
-    }
-
-    .nav-link {
-        color: $white;
+        .contentHeader{
+            
+        }
     }
 
     @include breakpoint(mobileLegacy) {

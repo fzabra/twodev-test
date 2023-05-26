@@ -1,3 +1,7 @@
 .menuPrimary {
-  background-color: yellow;
+    li{
+        ul{
+            display: none;
+        }
+    }
 }
