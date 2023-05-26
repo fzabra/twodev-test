@@ -2,8 +2,8 @@
 
 .containerSearch{
     position: relative;
-    height: 39px;
-    top: 0px;
+    height: 2.438rem;
+    top: 0;
     @include breakpoint(laptop) {
         width: 50%;
     }
@@ -11,7 +11,7 @@
 
 .svgSearch{
     position: absolute;
-    right: 7px;
-    top: 7px;
+    right: 0.438rem;
+    top: 0.438rem;
     z-index: 1;
 }

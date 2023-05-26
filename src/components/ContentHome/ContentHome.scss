@@ -36,21 +36,21 @@
             justify-content: space-around;
             background-color: #fafbfb;
             margin-top: 1.25rem;
-            box-shadow: -2px 10px 12px -5px rgba(133,128,133,1);
-            border-radius: 5px;
+            box-shadow: -0.125rem 0.625rem 0.75rem -0.313rem rgba(133,128,133,1);
+            border-radius: 0.313rem;
         }
         .row{
-            padding: 10px;
+            padding: 0.625rem;
             .box-news{
                 background-color: #FAFBFB;
-                padding: 20px 10px;
+                padding: 1.25rem 0.625rem;
             }
             
             ul{
                 text-align: left;
                 li{
                     text-align: left;
-                    margin-bottom: 20px;
+                    margin-bottom: 1.25rem;
                     &::marker{
                         color: $green01;
                     }
@@ -68,7 +68,7 @@
     .swiper-pagination{
         position: sticky;
         .swiper-pagination-bullet {
-            margin-top: 30px!important;
+            margin-top: 1.875rem!important;
         }
         .swiper-pagination-bullet-active{
             background-color: $green01;
@@ -78,11 +78,11 @@
 
 
 .section-instagram{
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
     h1{
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
     img{
         object-fit: cover;
