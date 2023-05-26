@@ -1,12 +1,12 @@
 import React from 'react'
-import './TopNavMenu.scss'
+import styles from'./TopNavMenu.module.scss'
 import MenuData from '../MenuData/MenuData';
 
 const TopNavMenu = () => {
 
     return (
       <>
-      <div className="top-nav-menu">
+      <div className={styles.topNavMenu}>
         <MenuData />
       </div>
       </>

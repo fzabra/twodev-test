@@ -3,18 +3,12 @@
 #root{
     .navbar{
         padding: 0.5rem;
-    }
-    .navbar-toggler{
-        color: $white;
-        border: none;
-        &:focus{
-            box-shadow: none;
-            border: none;
+        a{
+            padding-left: 3.125rem;
+            img{
+                margin-left: 1rem;
+            }
         }
-    }
-
-    .nav-link {
-        color: $white;
     }
 
     @include breakpoint(mobileLegacy) {
