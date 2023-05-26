@@ -24,7 +24,7 @@
 }
 
 .parent-news{
-    background-color: #EDEFDB;
+    background-color: $yellow01;
     
     .news{
         margin-bottom: 1.25rem;
@@ -34,7 +34,7 @@
         @include breakpoint(desktop) {
             flex-direction: row;
             justify-content: space-around;
-            background-color: #fafbfb;
+            background-color: $white02;
             margin-top: 1.25rem;
             box-shadow: -0.125rem 0.625rem 0.75rem -0.313rem rgba(133,128,133,1);
             border-radius: 0.313rem;
@@ -42,7 +42,7 @@
         .row{
             padding: 0.625rem;
             .box-news{
-                background-color: #FAFBFB;
+                background-color: $white02;
                 padding: 1.25rem 0.625rem;
             }
             
