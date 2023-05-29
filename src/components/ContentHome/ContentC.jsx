@@ -9,12 +9,12 @@ const ContentC = () => {
             <div className="container">
                 <div className='row'>
                     <section className='slider-mov'>
-                        <div className="col-12 text-center mt-3">
+                        <div className="col-12 text-center mt-5 mb-5">
                             <div className="title">
                                 <h2>10 magasins</h2>
                             </div>
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-6 left-col">
                                     <div className="img-magasins">
                                         <img src='./images/images8.png' alt="Image Alt" className='img-fluid'></img>
                                         <p>Montréal</p>
@@ -36,7 +36,7 @@ const ContentC = () => {
                                         <p>Levis</p>
                                     </div>                            
                                 </div>
-                                <div className="col-6">
+                                <div className="col-6 right-col">
                                     <div className="img-magasins">
                                         <img src='./images/Laval_1.png' alt="Image Alt" className='img-fluid'></img>
                                         <p>Laval</p>
@@ -59,7 +59,7 @@ const ContentC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row">
+                            <div className="row mt-5">
                                 <div className="col-12 mt-3">
                                     <div>
                                         <div>

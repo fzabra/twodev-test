@@ -8,6 +8,7 @@ const MenuData = () => {
   const [menuPrimary, setMenuPrimary] = useState([]);
   const [menuSecondary, setMenuSecondary] = useState([]);
   const [data, setData] = useState(null);
+  const [activeItem, setActiveItem] = useState(null); // Estado para controlar o item ativo
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,22 +28,36 @@ const MenuData = () => {
     fetchData();
   }, []);
 
+  const handleMouseEnter = (itemId) => {
+    setActiveItem(itemId);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveItem(null);
+  };
+
   return (
     <ul className={styles.menuPrimary}>
       {menuPrimary.map((menuItem) => (
-        <li key={menuItem.item_id}>
-          <img src={`https://avril-bkd.2dev.ca/media/${menuItem.icon}`} />
-          {menuItem.title}
+        <li
+          key={menuItem.item_id}
+          onMouseEnter={() => handleMouseEnter(menuItem.item_id)}
+          onMouseLeave={handleMouseLeave}
+          className={activeItem === menuItem.item_id ? 'active' : ''}
+        >
+          <img src={`https://avril-bkd.2dev.ca/media/${menuItem.icon}`} /> {menuItem.title}
 
-          <ul>
-            {menuSecondary.map((subItem) => (
-              <React.Fragment key={subItem.item_id}>
-                {subItem.parent_id === Number(menuItem.item_id) && (
-                  <li>{subItem.title}</li>
-                )}
-              </React.Fragment>
-            ))}
-          </ul>
+          {menuSecondary.some((subItem) => subItem.parent_id === Number(menuItem.item_id)) && (
+            <ul>
+              {menuSecondary.map((subItem) => (
+                <React.Fragment key={subItem.item_id}>
+                  {subItem.parent_id === Number(menuItem.item_id) && (
+                    <li>{subItem.title}</li>
+                  )}
+                </React.Fragment>
+              ))}
+            </ul>
+          )}
         </li>
       ))}
     </ul>
