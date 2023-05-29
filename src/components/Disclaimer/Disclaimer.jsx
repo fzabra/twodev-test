@@ -14,7 +14,6 @@ const Disclaimer = () => {
           "https://avril.2dev.ca/fr/graphql?hash=2832062463&identifiers_1=[%22header_disclaimer%22]"
         );
         setData(response.data.data);
-        console.log("dis", response.data.data);
       } catch (error) {
         console.error("Error getting data:", error);
       }
@@ -33,11 +32,11 @@ const Disclaimer = () => {
       const showNextParagraph = () => {
         paragraphs.forEach((paragraph, index) => {
           if (index === current) {
-            paragraph.classList.add("fade-in");
+            paragraph.classList.add("fadeIn");
             paragraph.style.display = "block";
           } else {
-            paragraph.classList.remove("fade-in");
-            paragraph.classList.add("fade-out");
+            paragraph.classList.remove("fadeIn");
+            paragraph.classList.add("fadeOut");
             paragraph.style.display = "none";
           }
         });
@@ -47,12 +46,12 @@ const Disclaimer = () => {
         setTimeout(() => {
           paragraphs.forEach((paragraph, index) => {
             if (index === current) {
-              paragraph.classList.remove("fade-out");
-              paragraph.classList.add("fade-in");
+              paragraph.classList.remove("fadeOut");
+              paragraph.classList.add("fadeIn");
               paragraph.style.display = "block";
             } else {
-              paragraph.classList.remove("fade-in");
-              paragraph.classList.add("fade-out");
+              paragraph.classList.remove("fadeIn");
+              paragraph.classList.add("fadeOut");
               paragraph.style.display = "none";
             }
           });
@@ -71,22 +70,18 @@ const Disclaimer = () => {
     return <div>Loading...</div>;
   }
 
-  if (!data.cmsBlocks || !data.cmsBlocks.items) {
-    return <div>Menu unavailable</div>;
-  }
-
   const disclaimerItems = data.cmsBlocks.items;
 
   return (
     <div>
       <div className="disclaimer">
-        {disclaimerItems.map((disclaimerItem, index) => (
-          <span
-            key={disclaimerItem.item_id}
-            className={index === currentParagraph ? "fade-in" : "fade-out"}
-            dangerouslySetInnerHTML={{ __html: disclaimerItem.content }}
-          ></span>
-        ))}
+      {disclaimerItems.map((disclaimerItem, index) => (
+        <span
+          key={disclaimerItem.item_id || index}
+          className={index === currentParagraph ? "fadeIn" : "fadeOut"}
+          dangerouslySetInnerHTML={{ __html: disclaimerItem.content }}
+        ></span>
+      ))}
       </div>
     </div>
   );

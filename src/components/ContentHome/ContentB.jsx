@@ -11,7 +11,7 @@ const ContentB = () => {
                             <div className='row'>
                                 <div className='col-0 col-md-2'></div>
                                     <div className='col-12 col-md-4 text-center box-gallery-home'>
-                                        <img src="./images/TheSAVCollective_AvrilSB5 1.png" alt="Image Alt" className='img-fluid gallery-home' />
+                                        <img src="./images/TheSAVCollective_AvrilSB51.png" alt="Image Alt" className='img-fluid gallery-home' />
                                     </div>
                                     <div className='col-12 text-center col-md-4 p-4 t-left'>
                                         <p>Nous offrons une vaste sélection de produits biologiques, naturels, végétaliens, sans gluten, locaux et écoresponsables.</p>

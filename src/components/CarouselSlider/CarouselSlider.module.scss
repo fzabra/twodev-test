@@ -1,0 +1,18 @@
+@import '../../scss/abstracts/_mixins.scss';
+
+.sliderHome {
+    div{
+        div{
+            [data-bs-target]{
+                background-color: $green01;
+                border-radius: 60%;
+                height: 1.188rem;
+                width: 1.188rem;
+                @include breakpoint(laptop) {
+                    height: 2.188rem;
+                    width: 2.188rem;
+                }
+            }
+        }
+    }
+}

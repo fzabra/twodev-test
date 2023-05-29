@@ -1,9 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
-import './CarouselSlider.scss';
+import styles from './CarouselSlider.module.scss';
 function CarouselSlider() {
   const isMobile = window.innerWidth <= 768;
   return (
-    <Carousel variant="dark">
+    <div className={styles.sliderHome}>
+    <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -25,6 +26,7 @@ function CarouselSlider() {
         />
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

@@ -1,0 +1,17 @@
+@import '../../scss/abstracts/_mixins.scss';
+
+.containerSearch{
+    position: relative;
+    height: 2.438rem;
+    top: 0;
+    @include breakpoint(laptop) {
+        width: 50%;
+    }
+}
+
+.svgSearch{
+    position: absolute;
+    right: 0.438rem;
+    top: 0.438rem;
+    z-index: 1;
+}

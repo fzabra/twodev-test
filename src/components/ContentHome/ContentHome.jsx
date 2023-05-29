@@ -6,6 +6,7 @@ import ContentB from './ContentB';
 import ContentC from './ContentC';
 import ContentD from './ContentD';
 import SwiperSliderInstagram from '../SwiperSlider/SwiperSliderInstagram'
+import Footer from '../Footer/Footer'
 
 
 const ContentHome = () => {
@@ -16,6 +17,7 @@ const ContentHome = () => {
     <ContentC />
     <ContentD />
     <SwiperSliderInstagram />
+    <Footer />
     </>
   );
 };
