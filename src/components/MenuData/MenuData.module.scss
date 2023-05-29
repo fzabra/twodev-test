@@ -1,7 +1,22 @@
 .menuPrimary {
     li{
+        cursor: pointer;
         ul{
             display: none;
+        }
+        &[class*=active]{
+            ul{
+                display: block;
+                margin: 0;
+                padding: 30px;
+                background-color: #fff;
+                width: 230px;
+                position: absolute;
+                li{
+                    padding: 10px 0;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
