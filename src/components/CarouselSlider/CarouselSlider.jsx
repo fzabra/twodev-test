@@ -8,20 +8,20 @@ function CarouselSlider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={isMobile ? 'https://avril-bkd.2dev.ca/media/wysiwyg/CARROUSEL_CIRCULAIRE_DBL_NOV_600x750_FR.jpg' : 'https://avril-bkd.2dev.ca/media/wysiwyg/CARROUSEL_CIRCULAIRE_DBL_NOV_2880x1200_FR.jpg'}
+          src={isMobile ? 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' : 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={isMobile ? 'https://avril-bkd.2dev.ca/media/wysiwyg/CARROUSEL_CIRCULAIRE_DBL_NOV_600x750_FR.jpg' : 'https://avril-bkd.2dev.ca/media/wysiwyg/CARROUSEL_CIRCULAIRE_DBL_NOV_2880x1200_FR.jpg'}
+          src={isMobile ? 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' : 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={isMobile ? 'https://avril-bkd.2dev.ca/media/wysiwyg/CARROUSEL_CIRCULAIRE_DBL_NOV_600x750_FR.jpg' : 'https://avril-bkd.2dev.ca/media/wysiwyg/CARROUSEL_CIRCULAIRE_DBL_NOV_2880x1200_FR.jpg'}
+          src={isMobile ? 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' : 'https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
           alt="Third slide"
         />
       </Carousel.Item>
